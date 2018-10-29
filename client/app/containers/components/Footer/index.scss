@@ -1,0 +1,19 @@
+$border-radius: 5px;
+
+@mixin border-radius($radius){
+    -moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+footer {
+	@include border-radius($border-radius);
+	border: 1px solid #6f6222;
+    background: #d0a921;
+}
+
+p {
+	margin: 2px 8px;
+	display: inline-block;
+	zoom: 1;
+}
